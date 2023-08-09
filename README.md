@@ -1,7 +1,6 @@
 # 中文文案排版指北
 
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/chinese-copywriting-guidelines/localized.svg)](https://crowdin.com/project/chinese-copywriting-guidelines)
-[![devDependency Status](https://david-dm.org/sparanoid/chinese-copywriting-guidelines/dev-status.svg)](https://david-dm.org/sparanoid/chinese-copywriting-guidelines#info=devDependencies)
 [![Built with Almace Scaffolding](https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg)](https://sparanoid.com/note/chinese-copywriting-guidelines/)
 
 統一中文文案、排版的相關用法，降低團隊成員之間的溝通成本，增強網站氣質。
@@ -11,7 +10,6 @@ Other languages:
 - [English](README.en.md)
 - [Chinese Traditional](README.md)
 - [Chinese Simplified](README.zh-Hans.md)
-- [Chinese Simplified](https://github.com/mzlogin/chinese-copywriting-guidelines)（外部連結）
 
 -----
 
@@ -25,13 +23,13 @@ Other languages:
 
 正確：
 
-> 在 LeanCloud 上，數據存儲是圍繞 `AVObject` 進行的。
+> 在 LeanCloud 上，數據儲存是圍繞 `AVObject` 進行的。
 
 錯誤：
 
-> 在LeanCloud上，數據存儲是圍繞`AVObject`進行的。
+> 在LeanCloud上，數據儲存是圍繞`AVObject`進行的。
 
-> 在 LeanCloud上，數據存儲是圍繞`AVObject` 進行的。
+> 在 LeanCloud上，數據儲存是圍繞`AVObject` 進行的。
 
 完整的正確用法：
 
@@ -61,17 +59,17 @@ Other languages:
 
 > 我家的光纖入屋寬頻有 10Gbps，SSD 一共有 20TB。
 
-例外：度／百分比與數字之間不需要增加空格：
+例外：度數／百分比與數字之間不需要增加空格：
 
 正確：
 
-> 今天是 233° 的高溫。
+> 角度為 90° 的角，就是直角。
 
 > 新 MacBook Pro 有 15% 的 CPU 性能提升。
 
 錯誤：
 
-> 今天是 233 ° 的高溫。
+> 角度為 90 ° 的角，就是直角。
 
 > 新 MacBook Pro 有 15 % 的 CPU 性能提升。
 
@@ -89,11 +87,13 @@ Other languages:
 
 ### `text-spacing` to the rescue?
 
-CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#text-spacing-property) 和 Microsoft 的 [`-ms-text-autospace`](https://msdn.microsoft.com/library/ms531164(v=vs.85).aspx) 可以實現自動為中英文之間增加空白。不過目前並未普及，另外在其他應用場景，例如 macOS、iOS、Windows 等用戶介面目前并不存在這個特性，所以請繼續保持隨手加空格的習慣。
+CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#text-spacing-property) 和 Microsoft 的 [`-ms-text-autospace`](https://msdn.microsoft.com/library/ms531164(v=vs.85).aspx) 可以實現自動為中英文之間增加空白。不過目前並未普及，另外在其他應用場景，例如 macOS、iOS、Windows 等用戶介面目前並不存在這個特性，所以請繼續保持隨手加空格的習慣。
 
 ## 標點符號
 
 ### 不重複使用標點符號
+
+雖然中國大陸的標點符號用法允許重複使用標點符號，但是這麼做會破壞句子的美觀性。
 
 正確：
 
@@ -133,6 +133,8 @@ CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#t
 
 > 核磁共振成像(NMRI)是什麼原理都不知道?JFGI!
 
+例外：中文句子內夾有英文書籍名、報刊名時，不應借用中文書名號，應以英文斜體表示。
+
 ### 數字使用半形字符
 
 正確：
@@ -151,7 +153,7 @@ CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#t
 
 > 賈伯斯那句話是怎麼說的？「Stay hungry, stay foolish.」
 
-> 推薦你閱讀《Hackers & Painters: Big Ideas from the Computer Age》，非常的有趣。
+> 推薦你閱讀 *Hackers & Painters: Big Ideas from the Computer Age*，非常地有趣。
 
 錯誤：
 
@@ -227,31 +229,40 @@ CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#t
 
 用法：
 
-> 「老師，『有條不紊』的『紊』是什麼意思？」
+> 「老师，『有条不紊』的『紊』是什么意思？」
 
 對比用法：
 
-> “老師，‘有條不紊’的‘紊’是什麼意思？”
+> “老师，‘有条不紊’的‘紊’是什么意思？”
 
 ## 工具
 
-倉庫 | 語言
---- | ---
-[vinta/paranoid-auto-spacing](https://github.com/vinta/paranoid-auto-spacing) | JavaScript
-[huei90/pangu.node](https://github.com/huei90/pangu.node) | Node.js
-[huacnlee/auto-correct](https://github.com/huacnlee/auto-correct) | Ruby
-[huacnlee/autocorrect](https://github.com/huacnlee/autocorrect) | Rust, WASM, CLI
-[huacnlee/go-auto-correct](https://github.com/huacnlee/go-auto-correct) | Go
-[sparanoid/space-lover](https://github.com/sparanoid/space-lover) | PHP (WordPress)
-[nauxliu/auto-correct](https://github.com/NauxLiu/auto-correct) | PHP
-[jxlwqq/chinese-typesetting](https://github.com/jxlwqq/chinese-typesetting) | PHP
-[hotoo/pangu.vim](https://github.com/hotoo/pangu.vim) | Vim
-[sparanoid/grunt-auto-spacing](https://github.com/sparanoid/grunt-auto-spacing) | Node.js (Grunt)
-[hjiang/scripts/add-space-between-latin-and-cjk](https://github.com/hjiang/scripts/blob/master/add-space-between-latin-and-cjk) | Python
-[hustcc/hint](https://github.com/hustcc/hint) | Python
-[studygolang/autocorrect](https://github.com/studygolang/autocorrect) | Go
-[n0vad3v/Tekorrect](https://github.com/n0vad3v/Tekorrect) | Python
-[VS Code - huacnlee.auto-correct](https://marketplace.visualstudio.com/items?itemName=huacnlee.auto-correct) | VS Code Extension
+倉庫 | 系列 | 語言
+--- | -- | ---
+[pangu.js](https://github.com/vinta/pangu.js) | pangu | JavaScript
+[pangu-go](https://github.com/vinta/pangu) | pangu | Go
+[pangu.java](https://github.com/vinta/pangu.java) | pangu | Java
+[pangu.py](https://github.com/vinta/pangu.py) | pangu | Python
+[pangu.rb](https://github.com/dlackty/pangu.rb) | pangu | Ruby
+[pangu.php](https://github.com/cchlorine/pangu.php) | pangu | PHP
+[pangu.vim](https://github.com/hotoo/pangu.vim) | pangu | Vim
+[vue-pangu](https://github.com/serkodev/vue-pangu) | pangu | Vue.js (Web Converter)
+[intellij-pangu](https://plugins.jetbrains.com/plugin/19665-pangu) | pangu | Intellij Platform Plugin
+[autocorrect](https://github.com/huacnlee/autocorrect) | autocorrect | Rust, WASM, CLI tool
+[autocorrect-node](https://github.com/huacnlee/autocorrect/tree/main/autocorrect-node) | autocorrect | Node.js
+[autocorrect-py](https://github.com/huacnlee/autocorrect/tree/main/autocorrect-py) | autocorrect | Python
+[autocorrect-rb](https://github.com/huacnlee/autocorrect/tree/main/autocorrect-rb) | autocorrect | Ruby
+[autocorrect-java](https://github.com/huacnlee/autocorrect/tree/main/autocorrect-java) | autocorrect | Java
+[autocorrect-go](https://github.com/longbridgeapp/autocorrect) | autocorrect | Go
+[autocorrect-php](https://github.com/NauxLiu/auto-correct) | autocorrect | PHP
+[autocorrect-vscode](https://marketplace.visualstudio.com/items?itemName=huacnlee.autocorrect) | autocorrect | VS Code Extension
+[autocorrect-idea-plugin](https://plugins.jetbrains.com/plugin/20244-autocorrect) | autocorrect | Intellij Platform Plugin
+[jxlwqq/chinese-typesetting](https://github.com/jxlwqq/chinese-typesetting) | other | PHP
+[sparanoid/space-lover](https://github.com/sparanoid/space-lover) | other | PHP (WordPress)
+[sparanoid/grunt-auto-spacing](https://github.com/sparanoid/grunt-auto-spacing) | other | Node.js (Grunt)
+[hjiang/scripts/add-space-between-latin-and-cjk](https://github.com/hjiang/scripts/blob/master/add-space-between-latin-and-cjk) | other | Python
+[hustcc/hint](https://github.com/hustcc/hint) | other | Python
+[n0vad3v/Tekorrect](https://github.com/n0vad3v/Tekorrect) | other | Python
 
 ## 誰在這樣做？
 
@@ -267,7 +278,6 @@ CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#t
 [V2EX](https://www.v2ex.com/) | Yes | Yes
 [Apple4us](https://apple4us.com/) | Yes | N/A
 [Ruby China](https://ruby-china.org/) | Yes | Yes
-[PHPHub](https://phphub.org/) | Yes | 標題達成
 [少數派](https://sspai.com/) | Yes | N/A
 
 ## 參考文獻
@@ -281,3 +291,9 @@ CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#t
 - [全形和半形 - 維基百科](https://zh.wikipedia.org/wiki/%E5%85%A8%E5%BD%A2%E5%92%8C%E5%8D%8A%E5%BD%A2)
 - [引號 - 維基百科](https://zh.wikipedia.org/wiki/%E5%BC%95%E8%99%9F)
 - [疑問驚嘆號 - 維基百科](https://zh.wikipedia.org/wiki/%E7%96%91%E5%95%8F%E9%A9%9A%E5%98%86%E8%99%9F)
+
+## Forks
+
+衍生專案的用法可能與本專案存在差異。
+
+- [mzlogin/chinese-copywriting-guidelines](https://github.com/mzlogin/chinese-copywriting-guidelines)

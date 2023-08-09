@@ -1,9 +1,5 @@
 # 中文文案排版指北
 
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/chinese-copywriting-guidelines/localized.svg)](https://crowdin.com/project/chinese-copywriting-guidelines)
-[![devDependency Status](https://david-dm.org/sparanoid/chinese-copywriting-guidelines/dev-status.svg)](https://david-dm.org/sparanoid/chinese-copywriting-guidelines#info=devDependencies)
-[![Built with Almace Scaffolding](https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg)](https://sparanoid.com/note/chinese-copywriting-guidelines/)
-
 统一中文文案、排版的相关用法，降低团队成员之间的沟通成本，增强网站气质。
 
 Other languages:
@@ -11,7 +7,6 @@ Other languages:
 - [英语](README.en.md)
 - [繁体中文](README.md)
 - [简体中文](README.zh-Hans.md)
-- [简体中文](https://github.com/mzlogin/chinese-copywriting-guidelines)（外部链接）
 
 * * *
 
@@ -61,17 +56,17 @@ Other languages:
 
 > 我家的光纤入屋宽带有 10Gbps，SSD 一共有 20TB
 
-例外：度 / 百分比与数字之间不需要增加空格：
+例外：度数／百分比与数字之间不需要增加空格：
 
 正确：
 
-> 今天是 233° 的高温。
+> 角度为 90° 的角，就是直角。
 >
 > 新 MacBook Pro 有 15% 的 CPU 性能提升。
 
 错误：
 
-> 今天是 233 ° 的高温。
+> 角度为 90 ° 的角，就是直角。
 >
 > 新 MacBook Pro 有 15 % 的 CPU 性能提升。
 
@@ -94,6 +89,8 @@ CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#t
 ## 标点符号
 
 ### 不重复使用标点符号
+
+虽然中国大陆的标点符号用法允许重复使用标点符号，但是这么做会破坏句子的美观性。
 
 正确：
 
@@ -133,6 +130,8 @@ CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#t
 >
 > 核磁共振成像(NMRI)是什么原理都不知道?JFGI!
 
+例外：中文句子内夹有英文书籍名、报刊名时，不应借用中文书名号，应以英文斜体表示。
+
 ### 数字使用半角字符
 
 正确：
@@ -151,7 +150,7 @@ CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#t
 
 > 乔布斯那句话是怎么说的？「Stay hungry, stay foolish.」
 >
-> 推荐你阅读《Hackers & Painters: Big Ideas from the Computer Age》，非常的有趣。
+> 推荐你阅读 *Hackers & Painters: Big Ideas from the Computer Age*，非常地有趣。
 
 错误：
 
@@ -235,23 +234,32 @@ CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#t
 
 ## 工具
 
-仓库 | 语言
---- | ---
-[vinta/paranoid-auto-spacing](https://github.com/vinta/paranoid-auto-spacing) | JavaScript
-[huei90/pangu.node](https://github.com/huei90/pangu.node) | Node.js
-[huacnlee/auto-correct](https://github.com/huacnlee/auto-correct) | Ruby
-[huacnlee/autocorrect](https://github.com/huacnlee/autocorrect) | Rust, WASM, CLI
-[huacnlee/go-auto-correct](https://github.com/huacnlee/go-auto-correct) | Go
-[sparanoid/space-lover](https://github.com/sparanoid/space-lover) | PHP (WordPress)
-[nauxliu/auto-correct](https://github.com/NauxLiu/auto-correct) | PHP
-[jxlwqq/chinese-typesetting](https://github.com/jxlwqq/chinese-typesetting) | PHP
-[hotoo/pangu.vim](https://github.com/hotoo/pangu.vim) | Vim
-[sparanoid/grunt-auto-spacing](https://github.com/sparanoid/grunt-auto-spacing) | Node.js (Grunt)
-[hjiang/scripts/add-space-between-latin-and-cjk](https://github.com/hjiang/scripts/blob/master/add-space-between-latin-and-cjk) | Python
-[hustcc/hint](https://github.com/hustcc/hint) | Python
-[studygolang/autocorrect](https://github.com/studygolang/autocorrect) | Go
-[n0vad3v/Tekorret](https://github.com/n0vad3v/Tekorrect) | Python
-[VS Code - huacnlee.auto-correct](https://marketplace.visualstudio.com/items?itemName=huacnlee.auto-correct) | VS Code Extension
+仓库 | 系列 | 语言
+--- | ---- | ---
+[pangu.js](https://github.com/vinta/pangu.js) | pangu | JavaScript
+[pangu-go](https://github.com/vinta/pangu) | pangu | Go
+[pangu.java](https://github.com/vinta/pangu.java) | pangu | Java
+[pangu.py](https://github.com/vinta/pangu.py) | pangu | Python
+[pangu.rb](https://github.com/dlackty/pangu.rb) | pangu | Ruby
+[pangu.php](https://github.com/cchlorine/pangu.php) | pangu | PHP
+[pangu.vim](https://github.com/hotoo/pangu.vim) | pangu | Vim
+[vue-pangu](https://github.com/serkodev/vue-pangu) | pangu | Vue.js (Web Converter)
+[intellij-pangu](https://plugins.jetbrains.com/plugin/19665-pangu) | pangu | Intellij Platform Plugin
+[autocorrect](https://github.com/huacnlee/autocorrect) | autocorrect | Rust, WASM, CLI tool
+[autocorrect-node](https://github.com/huacnlee/autocorrect/tree/main/autocorrect-node) | autocorrect | Node.js
+[autocorrect-py](https://github.com/huacnlee/autocorrect/tree/main/autocorrect-py) | autocorrect | Python
+[autocorrect-rb](https://github.com/huacnlee/autocorrect/tree/main/autocorrect-rb) | autocorrect | Ruby
+[autocorrect-java](https://github.com/huacnlee/autocorrect/tree/main/autocorrect-java) | autocorrect | Java
+[autocorrect-go](https://github.com/longbridgeapp/autocorrect) | autocorrect | Go
+[autocorrect-php](https://github.com/NauxLiu/auto-correct) | autocorrect | PHP
+[autocorrect-vscode](https://marketplace.visualstudio.com/items?itemName=huacnlee.autocorrect) | autocorrect | VS Code Extension
+[autocorrect-idea-plugin](https://plugins.jetbrains.com/plugin/20244-autocorrect) | autocorrect | Intellij Platform Plugin
+[jxlwqq/chinese-typesetting](https://github.com/jxlwqq/chinese-typesetting) | other | PHP
+[sparanoid/space-lover](https://github.com/sparanoid/space-lover) | other | PHP (WordPress)
+[sparanoid/grunt-auto-spacing](https://github.com/sparanoid/grunt-auto-spacing) | other | Node.js (Grunt)
+[hjiang/scripts/add-space-between-latin-and-cjk](https://github.com/hjiang/scripts/blob/master/add-space-between-latin-and-cjk) | other | Python
+[hustcc/hint](https://github.com/hustcc/hint) | other | Python
+[n0vad3v/Tekorrect](https://github.com/n0vad3v/Tekorrect) | other | Python
 
 ## 谁在这样做？
 
@@ -267,9 +275,7 @@ CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#t
 [V2EX](https://www.v2ex.com/) | 是 | 是
 [Apple4us](https://apple4us.com/) | 是 | N/A
 [Ruby China](https://ruby-china.org/) | 是 | 是
-[PHPHub](https://phphub.org/) | 是 | 标题达成
 [少数派](https://sspai.com/) | 是 | N/A
-[力扣 LeetCode](https://leetcode-cn.com/) | 是 | 是
 
 ## 参考文献
 
@@ -282,3 +288,9 @@ CSS Text Module Level 4 的 [`text-spacing`](https://www.w3.org/TR/css-text-4/#t
 - [全形和半形 - 维基百科](https://zh.wikipedia.org/wiki/%E5%85%A8%E5%BD%A2%E5%92%8C%E5%8D%8A%E5%BD%A2)
 - [引号 - 维基百科](https://zh.wikipedia.org/wiki/%E5%BC%95%E8%99%9F)
 - [疑问惊叹号 - 维基百科](https://zh.wikipedia.org/wiki/%E7%96%91%E5%95%8F%E9%A9%9A%E5%98%86%E8%99%9F)
+
+## Forks
+
+衍生项目的用法可能与本项目存在差异。
+
+- [mzlogin/chinese-copywriting-guidelines](https://github.com/mzlogin/chinese-copywriting-guidelines)
